@@ -1,0 +1,63 @@
+.inferno_table select {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #6B91AB;
+    border-radius: 3px 3px 3px 3px;
+    color: #000000;
+    font: 11px Tahoma,Calibri,Verdana,Geneva,sans-serif;
+    outline: 0 none;
+    padding: 4px;
+}
+
+.inferno_text {
+	max-width: 500px;
+	width: 90%;
+	height: 18px;
+	font-size:12px;
+}
+
+.inferno_shoutbox {
+}
+
+.inferno_content {
+	padding-left: 5px;
+	word-wrap:break-word;
+	margin-right:10px;
+	margin-bottom:20px;
+	margin-top:5px;
+    color: #3e3e3e;
+	overflow: auto;
+}
+
+.inferno_content a {
+	text-decoration:none;
+	color:#336699;
+}
+
+.inferno_content a:hover {
+	text-decoration:underline;
+}
+
+.inferno_links {
+	margin-left: 5px;
+	margin-bottom: -1px;
+}
+
+.inferno_links div {
+	border-radius: 3px 3px 0px 0px;
+	/*padding-left: 5px;
+	padding-right: 5px;*/
+}
+
+.inferno_links div {
+	margin-right: 8px;
+	display: inline;
+}
+
+.inferno_alert {
+	background-color: #FBEF8D;
+	padding:1px;
+}
+
+.inferno_alert_div {
+	padding: 8px 0px 3px 5px;
+}

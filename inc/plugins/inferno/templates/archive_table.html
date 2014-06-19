@@ -1,0 +1,26 @@
+<script type="text/javascript">
+
+function load(page)
+{
+	window.location = 'infernoshout.php?action=archive&page=' + page;
+}
+
+function load_from_text()
+{
+	text = document.getElementById('a_page').value;
+	window.location = 'infernoshout.php?action=archive&page=' + text;
+}
+
+</script>
+<table class="tborder" style="width:90%" cellspacing="1" cellpadding="4" border="0">
+	<thead>
+		<tr>
+			<td class="thead" align="center" colspan="5"><b>{inferno_shoutbox_title} {$lang->isb_archive}</b></td>
+		</tr>
+	</thead>
+	<tbody style="">
+		{inferno_archive_nav}
+		{inferno_archive_shouts}
+		{inferno_archive_nav}
+	</tbody>
+</table>

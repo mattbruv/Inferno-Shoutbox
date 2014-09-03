@@ -73,7 +73,6 @@ inferno = function()
 		jQuery.ajax({
 			type: 'GET',
 			url: this.url + '?action=openanus' + inferno.screw_ie(),
-			async: false,
 			success: function(transport) {
 			inferno.anus_time = transport;
 			},
@@ -184,7 +183,6 @@ inferno = function()
 		jQuery.ajax({
 			type: 'GET',
 			url: this.url + '?action=getshout&id=' + id + inferno.screw_ie(),
-			async: false,
 			success: function(transport) {
 				if (transport != '')
 				{
@@ -548,7 +546,6 @@ inferno = function()
 
 		jQuery.ajax({ type: "GET",
 				url: this.url + '?action=getshouts' + inferno.screw_ie(),
-				async: false,
 				success: function(transport) {
 				response = transport;
 

@@ -75,7 +75,7 @@ inferno = function()
 			url: this.url + '?action=openanus' + inferno.screw_ie(),
 			async: false,
 			success: function(transport) {
-				inferno.anus_time = transport.responseText;
+			inferno.anus_time = transport;
 			},
 			error: function() { inferno.alert('Something went wrong opening the anus...'); }
 		});
@@ -217,7 +217,7 @@ inferno = function()
 		{
 			var options = {
 			    type: 'post',
-				url: this.url + '?action=updateshout',
+			    url: this.url + '?action=updateshout',
 			    data: {sid: sid, shout: shout},
 			    success: function() {
 			    	inferno.cancel();
@@ -242,7 +242,7 @@ inferno = function()
 		sid = this.editshoutid;
 		var options = {
 		    type: 'POST',
-			url: this.url + '?action=deleteshout',
+		    url: this.url + '?action=deleteshout',
 		    data: {sid: sid},
 		    success: function() {
 		    	inferno.alert('Shout deleted successfully.');
@@ -349,7 +349,7 @@ inferno = function()
 
 			var options = {
 			    type: 'POST',
-				url: this.url + '?action=updatestyles',
+			    url: this.url + '?action=updatestyles',
 			    data: 'styles=' + s
 			};
 
@@ -395,7 +395,7 @@ inferno = function()
 
 			var options = {
 			    type: 'POST',
-				url: inferno.url + '?action=newshout',
+			    url: inferno.url + '?action=newshout',
 			    data: params,
 			    success: function() {
 			    	inferno.submit_styles();
@@ -547,9 +547,9 @@ inferno = function()
 		}
 
 		jQuery.ajax({ type: "GET",
-							url: this.url + '?action=getshouts' + inferno.screw_ie(),
-							async: false,
-							success: function(transport) {
+				url: this.url + '?action=getshouts' + inferno.screw_ie(),
+				async: false,
+				success: function(transport) {
 				response = transport;
 
 				if (response.indexOf('<<~!PARSE_SHOUT!~>>') != -1) {

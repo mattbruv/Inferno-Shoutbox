@@ -343,7 +343,7 @@ inferno = function()
 		if (this.style_update)
 		{
 			s = this.styles;
-			s = Object.toJSON(s);
+			s = JSON.stringify(s);
 
 			var options = {
 			    type: 'POST',
